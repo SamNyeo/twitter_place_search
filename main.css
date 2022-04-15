@@ -14,12 +14,12 @@ img {
 }
 
 .inner {
-  width: 800px;
+  width: 100%;
   text-align: center;
   margin: 50px 0;
 }
 
-button {
+.button__blue {
   background-color:cornflowerblue;
   border: none;
   color: #FFF;
@@ -57,4 +57,33 @@ input {
   width: 50px;
   height: 30px;
   margin: 0;
+}
+
+.letter {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: cornflowerblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.btn__section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn__white {
+  background-color: #FFF;
+  border: 1px solid cornflowerblue;
+  margin-right: 8px;
+  font-size: 14px;
+  padding: 5px 12px;
 }
