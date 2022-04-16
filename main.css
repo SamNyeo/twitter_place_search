@@ -23,9 +23,15 @@ img {
   background-color:cornflowerblue;
   border: none;
   color: #FFF;
-  width: 100px;
+  padding: 5px 5px;
   height: 40px;
   font-size: 15px;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 button, img {
@@ -51,6 +57,7 @@ input {
   border: none;
   outline: none;
   padding: 3px 5px;
+  margin-right: 5px;
 }
 
 .search form button {
@@ -86,4 +93,8 @@ input {
   margin-right: 8px;
   font-size: 14px;
   padding: 5px 12px;
+}
+
+.material-icons {
+  margin-top: 10px;
 }
