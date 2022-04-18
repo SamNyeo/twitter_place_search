@@ -37,7 +37,29 @@
     </section>
   </div>
   <script>
-    
+    const $input = document.querySelector('input')
+const $button = document.querySelector('button')
+
+const onInput = event => {
+  search = event.target.value
+  console.log(search)
+}
+
+const onClickButton = (e) => {
+  e.preventDefault();
+  window.location.href = "https://twitter.com/search?q=" + search
+  
+//방탄
++ "%23지민이와_밥밥밥을먹어요 OR"
++ "%23정국아_같이먹짱 OR"
++ "%23머거스트디 OR"
++ "%23뷔슐랭 OR"
+  
++  "&src=typed_query";
+}
+
+$input.addEventListener('input', onInput)
+$button.addEventListener('click', onClickButton)
   </script>
 </body>
 </html>

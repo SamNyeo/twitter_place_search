@@ -37,7 +37,26 @@
     </section>
   </div>
   <script>
-    
+    const $input = document.querySelector('input')
+const $button = document.querySelector('button')
+
+const onInput = event => {
+  search = event.target.value
+  console.log(search)
+}
+
+const onClickButton = (e) => {
+  e.preventDefault();
+  window.location.href = "https://twitter.com/search?q=" + search
+
+//엑소
++ "%23백현이를_위한_맛집투어 OR"
+
++  "&src=typed_query";
+}
+
+$input.addEventListener('input', onInput)
+$button.addEventListener('click', onClickButton)
   </script>
 </body>
 </html>

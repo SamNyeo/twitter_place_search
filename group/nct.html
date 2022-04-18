@@ -37,7 +37,36 @@
     </section>
   </div>
   <script>
-    
+    const $input = document.querySelector('input')
+const $button = document.querySelector('button')
+
+const onInput = event => {
+  search = event.target.value
+  console.log(search)
+}
+
+const onClickButton = (e) => {
+  e.preventDefault();
+  window.location.href = "https://twitter.com/search?q=" + search
+  
+//엔시티
++ "%23박지성_단1g도안줌 OR"
++ "%23제노의_맛그당어 OR"
++ "%23나나의_맛집탐방기 OR"
++ "%23정우의_원데이씩스밀 OR"
++ "%23먹어봤도영 OR"
++ "%23골라마디쉬 OR"
++ "%23너무너무맛있잼 OR"
++ "%23재혀니_맛있게머겅 OR"
++ "%23먹다가_해찬이_생각이나신거예요 OR"
++ "%23마크한테만공개 OR"
++ "%23런쥔아_밥무거쒀 OR"
+
++  "&src=typed_query";
+}
+
+$input.addEventListener('input', onInput)
+$button.addEventListener('click', onClickButton)
   </script>
 </body>
 </html>

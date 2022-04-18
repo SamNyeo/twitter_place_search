@@ -15,29 +15,6 @@
 
 
 </head>
-<body>
-  <div class="inner">
-    <HEADER>
-      <h1>트위터 맛집 검색기</h1>
-      <h3>그룹별 검색</h3>
-      <p class="group">위너<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>트위터 맛집 검색기</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="../main.css">
-
-
-</head>
-<body>
   <div class="inner">
     <HEADER>
       <h1>트위터 맛집 검색기</h1>
@@ -59,27 +36,29 @@
     </section>
   </div>
   <script>
-    
-  </script>
-</body>
-</html></p>
-    </HEADER>
-    <section class="search">
-      <form>
-        <input type="text">
-        <button class="button__blue">검색</button>
-      </form>
-    </section>
-    <section class="main">
-      <a href="main.html">
-        <span class="material-icons">
-          home
-          </span>
-        </a>
-    </section>
-  </div>
-  <script>
-    
+    const $input = document.querySelector('input')
+const $button = document.querySelector('button')
+
+const onInput = event => {
+  search = event.target.value
+  console.log(search)
+}
+
+const onClickButton = (e) => {
+  e.preventDefault();
+  window.location.href = "https://twitter.com/search?q=" + search
+
++ "%23위EAT_인EAT OR"
++ "%23승윤이의_맛집_PAGE OR"
++ "%23이맛집_찐받네 OR"
++ "%23마이노_마이무 OR"
++ "%23훈슐랭_여기도가봤니 OR"
+
++  "&src=typed_query";
+}
+
+$input.addEventListener('input', onInput)
+$button.addEventListener('click', onClickButton)
   </script>
 </body>
 </html>
